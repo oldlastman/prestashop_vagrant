@@ -50,11 +50,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     group: "www-data",
     mount_options: ["dmode=775,fmode=664"],
     create: true
-  config.vm.synced_folder "../prestashop-avalaratax", "/var/www/html/prestashop/modules/avalaratax",
-    owner: "vagrant",
-    group: "www-data",
-    mount_options: ["dmode=775,fmode=664"],
-    create: true
+
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
