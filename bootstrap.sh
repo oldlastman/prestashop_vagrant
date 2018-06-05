@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## Change this to the PS version you'd like to use
-PS_VERSION=prestashop_1.6.1.7.zip
+PS_VERSION=prestashop_1.6.1.19.zip
 
 ## Setup and basic tools
 sudo apt-get update && sudo apt-get upgrade -y
@@ -24,7 +24,7 @@ sudo service apache2 reload
 
 ## Download Prestashop
 cd /vagrant
-wget http://www.prestashop.com/download/old/$PS_VERSION
+wget https://download.prestashop.com/download/releases/$PS_VERSION
 unzip -o $PS_VERSION
 sudo rm ./$PS_VERSION
 
